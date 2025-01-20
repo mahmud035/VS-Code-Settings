@@ -1,13 +1,15 @@
 {
-  //* Live Server
+  //* Live Server Settings
   "liveServer.settings.port": 5500,
   "liveServer.settings.NoBrowser": false,
   "liveServer.settings.CustomBrowser": "chrome",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": false,
+
+  //* IntelliCode Suggestions
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
-  //* Editor
+  //* Editor Settings
   "editor.fontSize": 20,
   "editor.lineHeight": 30,
   "editor.fontWeight": "600",
@@ -35,12 +37,12 @@
   },
   "editor.snippetSuggestions": "top",
 
-  //* Editor (Cursor)
+  //* Cursor Customization
   "editor.cursorBlinking": "expand",
   "editor.cursorWidth": 3,
   "editor.cursorSmoothCaretAnimation": "on",
 
-  //* Workbench, Window & Explorer
+  //* Workbench and UI Customizations
   "workbench.colorCustomizations": {},
   "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
   "workbench.startupEditor": "none",
@@ -50,7 +52,7 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.sideBar.location": "right",
 
-  //* Prettier
+  //* Prettier Configuration
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.singleQuote": true,
   "[jsonc]": {
@@ -63,7 +65,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  //* Better Comments
+  //* Better Comments Plugin
   "better-comments.tags": [
     {
       "tag": "//",
@@ -140,7 +142,7 @@
     "tailwindcss"
   ],
 
-  //* TODO Highlight
+  //* TODO Highlight Plugin
   "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
   "todohighlight.defaultStyle": {
@@ -175,7 +177,7 @@
     }
   ],
 
-  //* Emmet
+  //* Emmet Configuration
   "emmet.includeLanguages": {
     "typescript": "typescriptreact",
     "javascript": "javascriptreact"
@@ -190,11 +192,12 @@
     "activeClassName"
   ],
 
-  //* Terminal
+  //* Terminal Configuration
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeight": "600",
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.fontLigatures": true,
   "terminal.integrated.tabs.defaultIcon": "terminal-bash",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.cursorWidth": 5,
@@ -222,8 +225,34 @@
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "editor.inlayHints.padding": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
+
+  "css.lint.unknownAtRules": "ignore",
   "files.readonlyInclude": {
     "node_modules/**": true
   },
-  "css.lint.unknownAtRules": "ignore"
+
+  //* Github Copilot
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  //* File Exclusions
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true
+  }
 }
