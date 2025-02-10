@@ -7,7 +7,7 @@
   "liveServer.settings.donotVerifyTags": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
-  //* Editor
+  //* Editor Settings
   "editor.fontSize": 20,
   "editor.lineHeight": 30,
   "editor.fontWeight": "600",
@@ -15,8 +15,8 @@
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.linkedEditing": true,
   "editor.minimap.size": "fit",
@@ -28,43 +28,35 @@
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.autohide": true,
   "editor.minimap.renderCharacters": false,
+  "editor.snippetSuggestions": "top",
+  "editor.inlayHints.enabled": "off",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.tslint": "explicit",
     "source.organizeImports": "explicit"
   },
 
-  //* Editor (Cursor)
+  //* Cursor Customization
   "editor.cursorBlinking": "expand",
   "editor.cursorWidth": 3,
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.snippetSuggestions": "top",
 
-  //* Workbench, Window & Explorer
+  //* Workbench and UI Customizations
   "workbench.colorCustomizations": {},
   "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
-  "workbench.startupEditor": "welcomePage",
   "workbench.iconTheme": "material-icon-theme",
   "window.commandCenter": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
 
-  //* Prettier
+  //* Prettier Configuration
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.singleQuote": true,
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "prettier.documentSelectors": [
+    "**/*.{html,css,scss,js,ts,jsx,tsx,json,jsonc,md}"
+  ],
 
   //* Better Comments
   "better-comments.tags": [
@@ -193,19 +185,19 @@
     "activeClassName"
   ],
 
-  //* Terminal
+  //* Terminal Configuration
   "terminal.integrated.fontSize": 17,
-  "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeight": "600",
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.tabs.defaultIcon": "terminal-bash",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.cursorWidth": 5,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "debug.console.fontSize": 17,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
 
+  "debug.console.fontSize": 17,
   "codesnap.realLineNumbers": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -215,18 +207,45 @@
   "inlineFold.autoFold": false,
   "git.openRepositoryInParentFolders": "never",
 
-  //* Inlay Hints
-  "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.inlayHints.enumMemberValues.enabled": true,
-  "javascript.inlayHints.variableTypes.enabled": true,
-  "javascript.inlayHints.parameterTypes.enabled": true,
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "editor.inlayHints.padding": true,
-  "editor.inlayHints.enabled": "offUnlessPressed",
+  "breadcrumbs.enabled": false,
+  "css.lint.unknownAtRules": "ignore",
   "files.readonlyInclude": {
     "node_modules/**": true
   },
-  "css.lint.unknownAtRules": "ignore"
+
+  //* Github Copilot
+  "github.copilot.enable": {
+    "*": false, // Disable globally
+    "javascript": true,
+    "typescript": true,
+    "javascriptreact": true, // For JSX files
+    "typescriptreact": true // For TSX files
+  },
+
+  //* File Exclusions
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/tmp/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/*.log": true
+  }
 }
