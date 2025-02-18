@@ -40,9 +40,10 @@
   "workbench.colorCustomizations": {},
   "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
   "workbench.iconTheme": "material-icon-theme",
-  "window.commandCenter": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
 
@@ -226,7 +227,9 @@
     "**/.DS_Store": true,
     "**/tmp": true,
     "**/node_modules": true,
-    "**/package-lock.json": true
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
   },
   "files.watcherExclude": {
     "**/.git/**": true,
