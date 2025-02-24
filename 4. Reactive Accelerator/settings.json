@@ -44,6 +44,7 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
+  "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
 
@@ -245,5 +246,6 @@
     "**/dist": true,
     "**/build": true,
     "**/*.log": true
-  }
+  },
+  "workbench.activityBar.location": "hidden"
 }
