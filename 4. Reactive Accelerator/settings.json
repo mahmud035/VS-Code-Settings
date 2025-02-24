@@ -28,7 +28,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.tslint": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit"
   },
 
   //* Cursor Customization
@@ -195,7 +196,6 @@
   "terminal.integrated.enableMultiLinePasteWarning": "never",
 
   "debug.console.fontSize": 17,
-  "codesnap.realLineNumbers": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -203,12 +203,17 @@
   "inlineFold.unfoldedOpacity": 1,
   "inlineFold.autoFold": false,
   "git.openRepositoryInParentFolders": "never",
-
   "breadcrumbs.enabled": false,
   "css.lint.unknownAtRules": "ignore",
   "files.readonlyInclude": {
     "node_modules/**": true
   },
+
+  //* Auto-Import Configuration
+  "typescript.preferences.importModuleSpecifier": "relative", // Ensures imports use `./` instead of absolute paths.
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.suggestionActions.enabled": true,
+  "typescript.suggestionActions.enabled": true,
 
   //* Github Copilot
   "github.copilot.enable": {
