@@ -37,9 +37,9 @@
   "editor.cursorSmoothCaretAnimation": "on",
 
   //* Workbench and UI Customizations
-  "workbench.colorCustomizations": {},
   "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
   "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#607B8B",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "workbench.navigationControl.enabled": false,
@@ -183,7 +183,7 @@
   ],
 
   //* Terminal Configuration
-  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.fontWeight": "600",
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   "terminal.integrated.copyOnSelection": true,
@@ -194,7 +194,8 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
 
-  "debug.console.fontSize": 17,
+  "debug.console.fontSize": 18,
+  "debug.console.fontFamily": "'JetBrainsMono Nerd Font'",
   "diffEditor.ignoreTrimWhitespace": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -238,7 +239,8 @@
     "**/node_modules": true,
     "**/dist": true,
     "**/package-lock.json": true,
-    "**/yarn.lock": true
+    "**/yarn.lock": true,
+    "**/vite-env.d.ts": true
   },
   "files.watcherExclude": {
     "**/.git/**": true,
@@ -254,6 +256,5 @@
     "**/dist": true,
     "**/build": true,
     "**/*.log": true
-  },
-  "workbench.activityBar.location": "hidden"
+  }
 }
