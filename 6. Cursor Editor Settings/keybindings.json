@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "inlineFold.toggle"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "alt+i",
+    "command": "editor.emmet.action.incrementNumberByOne"
+  },
+  {
+    "key": "alt+d",
+    "command": "editor.emmet.action.decrementNumberByOne"
+  }
+]

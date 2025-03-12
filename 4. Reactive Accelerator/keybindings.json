@@ -6,18 +6,8 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "alt+enter",
     "command": "github.copilot.generate",
-    "when": "editorTextFocus && github.copilot.activated"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated"
   },
   {
@@ -31,5 +21,20 @@
   {
     "key": "shift+b",
     "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "alt+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "alt+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused"
   }
 ]
