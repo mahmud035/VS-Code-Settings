@@ -3,16 +3,16 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
-      "command": "find",
-      "id": "User.find"
-    },
-    {
       "command": {
         "action": "splitPane",
         "split": "auto",
         "splitMode": "duplicate"
       },
       "id": "User.splitPane.A6751878"
+    },
+    {
+      "command": "find",
+      "id": "User.find"
     },
     {
       "command": "paste",
@@ -38,12 +38,12 @@
   "initialRows": 30,
   "keybindings": [
     {
-      "id": "User.find",
-      "keys": "ctrl+shift+f"
-    },
-    {
       "id": "User.paste",
       "keys": "ctrl+v"
+    },
+    {
+      "id": "User.find",
+      "keys": "ctrl+shift+f"
     },
     {
       "id": "User.splitPane.A6751878",
@@ -104,11 +104,17 @@
         "elevate": false,
         "experimental.retroTerminalEffect": false,
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "hidden": false,
+        "hidden": true,
         "name": "Command Prompt",
         "opacity": 100,
         "scrollbarState": "visible",
         "useAcrylic": false
+      },
+      {
+        "guid": "{75e3e2ad-90f6-5f08-ae02-294400eb6ef0}",
+        "hidden": false,
+        "name": "Ubuntu",
+        "source": "Microsoft.WSL"
       }
     ]
   },

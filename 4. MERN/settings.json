@@ -1,0 +1,267 @@
+{
+  //* IntelliCode Suggestions
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  //* Editor Settings
+  "editor.fontSize": 20,
+  "editor.lineHeight": 30,
+  "editor.fontWeight": "600",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono'",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.size": "fit",
+  "editor.suggestSelection": "first",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.stickyScroll.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.snippetSuggestions": "top",
+  "editor.inlayHints.enabled": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+
+  //* Cursor Customization
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3,
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  //* Workbench and UI Customizations
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#607B8B",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.statusBar.visible": false,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+
+  //* Prettier Configuration
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.documentSelectors": [
+    "**/*.{html,css,scss,js,ts,jsx,tsx,json,jsonc,md}"
+  ],
+
+  //* Better Comments Plugin
+  "better-comments.tags": [
+    {
+      "tag": "//",
+      "color": "#DBDBDB",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#00AC61",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "!",
+      "color": "#ef4444",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3b82f6",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  //* Highlight matching tag
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "left": {
+        "custom": {
+          "borderWidth": "0 0 0 3px",
+          "borderStyle": "solid",
+          "borderColor": "teal",
+          "borderRadius": "5px",
+          "overviewRulerColor": "white"
+        }
+      },
+      "right": {
+        "custom": {
+          "borderWidth": "0 3px 0 0",
+          "borderStyle": "solid",
+          "borderColor": "teal",
+          "borderRadius": "5px",
+          "overviewRulerColor": "white"
+        }
+      }
+    }
+  },
+
+  //* Spell Checker
+  "cSpell.userWords": [
+    "autohide",
+    "codesnap",
+    "donot",
+    "esbenp",
+    "num",
+    "Sumit",
+    "todohighlight",
+    "vsintellicode",
+    "tailwindcss"
+  ],
+
+  //* TODO Highlight Plugin
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.defaultStyle": {
+    "cursor": "pointer",
+    "borderRadius": "2px"
+  },
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#fff",
+      "backgroundColor": "#034A44"
+    },
+    {
+      "text": "NOTE:",
+      "color": "#fff",
+      "backgroundColor": "#124364"
+    },
+    {
+      "text": "IMPORTANT:",
+      "color": "#fff",
+      "backgroundColor": "#14484D"
+    },
+    {
+      "text": "FIXME:",
+      "color": "#fff",
+      "backgroundColor": "#810835"
+    },
+    {
+      "text": "WARNING:",
+      "color": "#000",
+      "backgroundColor": "#FBBD23"
+    }
+  ],
+
+  //* Emmet Configuration
+  "emmet.includeLanguages": {
+    "typescript": "typescriptreact",
+    "javascript": "javascriptreact"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "activeClassName"
+  ],
+
+  //* Terminal Configuration
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.tabs.defaultIcon": "terminal-powershell",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.cursorWidth": 5,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
+
+  "debug.console.fontSize": 18,
+  "debug.console.fontFamily": "'JetBrainsMono Nerd Font'",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "markdown.validate.enabled": true,
+  "inlineFold.unfoldedOpacity": 1,
+  "inlineFold.autoFold": false,
+  "git.openRepositoryInParentFolders": "never",
+  "breadcrumbs.enabled": false,
+  "css.lint.unknownAtRules": "ignore",
+  "files.readonlyInclude": {
+    "node_modules/**": true
+  },
+
+  //* Auto-Import Configuration
+  "typescript.preferences.importModuleSpecifier": "relative", // Ensures imports use `./` instead of absolute paths.
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.suggestionActions.enabled": true,
+  "typescript.suggestionActions.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.paths": true,
+  "typescript.suggest.paths": true,
+
+  //* Github Copilot
+  "github.copilot.enable": {
+    "*": false, // Disable globally
+    "javascript": true,
+    "typescript": true,
+    "javascriptreact": true, // For JSX files
+    "typescriptreact": true // For TSX files
+  },
+
+  //* File Exclusions
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/vite-env.d.ts": true,
+    "**/.cache": true,
+    "**/.next": true
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/tmp/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/*.log": true,
+    "**/.cache": true,
+    "**/.next": true
+  },
+  "chat.commandCenter.enabled": false
+}
